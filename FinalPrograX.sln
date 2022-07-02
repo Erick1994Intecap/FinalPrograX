@@ -6,10 +6,19 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csproj", "{03F3F855-8182-4E56-B921-C51FB459B6E0}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Service", "Service\Service.csproj", "{9F9491AC-0898-402E-B315-BF98832A0B28}"
+	ProjectSection(ProjectDependencies) = postProject
+		{620ED44B-4415-4EB6-ACEB-305A124D1F8E} = {620ED44B-4415-4EB6-ACEB-305A124D1F8E}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface", "Interface\Interface.csproj", "{620ED44B-4415-4EB6-ACEB-305A124D1F8E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{03F3F855-8182-4E56-B921-C51FB459B6E0} = {03F3F855-8182-4E56-B921-C51FB459B6E0}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WepApi", "WepApi\WepApi.csproj", "{5FD305AF-671A-4F17-91E3-8ED933D2EDBF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9F9491AC-0898-402E-B315-BF98832A0B28} = {9F9491AC-0898-402E-B315-BF98832A0B28}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
