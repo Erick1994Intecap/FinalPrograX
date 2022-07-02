@@ -35,12 +35,12 @@ namespace WepApi.Controllers
                 
             try
             {
+                _logger.LogInformation(message: "Si funciona");
                 return _service.GetClientes(_dbConnection);
             }
             catch (Exception ex)
             {
-                _logger.LogError(message: "Error");
-                _logger.LogError(ex, "Error Message");
+                _logger.LogError(message: "Error no se que paso, naaa si se");
                
                 throw;
             }
